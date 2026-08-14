@@ -10,18 +10,24 @@
       <h1> My favorite  movies</h1> 
     
        <p>Here are some movies I like</p> 
+       <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">About</a>
+       </nav>
     </header>
     <main>
         <section>
     <ul>
-       <p>tytytyt</p>
         <li>
-            <article>
-           <h2>Name movie: Harry Potter</h2>
+        <article>
            <img src="../static/images/harry-potter.png" alt="Harry Potter movie poster">
+           <div>
+           <h2>Name movie: Harry Potter</h2>
            <p>Movie description: This film tells the story of how a little boy finds out that he is a wizard.</p>
            <a href="https://www.imdb.com/title/tt0241527/">Read more</a>
-           </article>
+           </div>
+        </article>
         </li> 
         
         <li>
@@ -44,6 +50,20 @@
     </ul>
     </section>
     <p>Which movie is your favorite?</p>
+    <form>
+        <label for="favorite-movie">Movie name:</label>
+
+        <input 
+        type="text"
+        id="favorite-movie"
+        name="favorite-movie"
+        placeholder="Enter movie name"
+        >
+        <button type="submit">Submit</button>
+    </form>
     </main>
+    <footer>
+        <p>My training</p>
+    </footer>
 </body>
 </html>
