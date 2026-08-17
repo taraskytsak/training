@@ -1,86 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-      <h1> My favorite  movies</h1> 
-    
-       <p>Here are some movies I like</p> 
-       <nav>
+      <h1>My favorite movies</h1>
+
+      <p>Here are some movies I like</p>
+      <nav>
         <a href="#">Home</a>
         <a href="#">Movies</a>
         <a href="#">About</a>
-       </nav>
+      </nav>
     </header>
     <main>
-        <section>
-    <ul>
-        <li>
-        <article>
-           <img src="../static/images/harry-potter.png" alt="Harry Potter movie poster">
-           <div>
-           <h2>Name movie: Harry Potter</h2>
-           <p>Movie description: This film tells the story of how a little boy finds out that he is a wizard.</p>
-           <a href="https://www.imdb.com/title/tt0241527/">Read more</a>
-           </div>
-        </article>
-        </li> 
-        
-        <li>
+      <section>
+        <ul>
+          <li>
             <article>
-          <h2>Name movie:  Lord of the Rings</h2>
-          <img src="../static/images/lord-of-the-rings.png" alt="Lord of the rings movie poster">
-          <p>Movie description: This film tells the story of Frodo Baggins and his company carrying ring to Mordor to defeat Sauron.</p>
-            <a href="https://www.imdb.com/title/tt0120737/">Read More</a>
+              <img
+                src="../static/images/harry-potter.png"
+                alt="Harry Potter movie poster"
+              />
+              <div>
+                <h2>Name movie: Harry Potter</h2>
+                <p>
+                  Movie description: This film tells the story of how a little
+                  boy finds out that he is a wizard.
+                </p>
+                <a href="https://www.imdb.com/title/tt0241527/">Read more</a>
+              </div>
             </article>
+          </li>
+
+          <li>
+            <article>
+              <h2>Name movie: Lord of the Rings</h2>
+              <img
+                src="../static/images/lord-of-the-rings.png"
+                alt="Lord of the rings movie poster"
+              />
+              <p>
+                Movie description: This film tells the story of Frodo Baggins
+                and his company carrying ring to Mordor to defeat Sauron.
+              </p>
+              <a href="https://www.imdb.com/title/tt0120737/">Read More</a>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <h2>Name movie: Forrest Gump</h2>
+              <img
+                src="../static/images/forrest-gump.png"
+                alt="Forrest Gump movie poster"
+              />
+              <p>
+                Movie description: The story of a boy who had serious problems
+                with his legs as a child, but fear is stronger than that and
+                makes him run faster and faster.
+              </p>
+              <a href="https://www.imdb.com/title/tt0109830/">Read more</a>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <p>Which movie is your favorite?</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Movie</th>
+            <th>Year</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Harry Potter</td>
+            <td>2001</td>
+            <td>9/10</td>
+          </tr>
+          <tr>
+            <td>Lord of the Rings</td>
+            <td>2001</td>
+            <td>10/10</td>
+          </tr>
+          <tr>
+            <td>Forrest Gump</td>
+            <td>1994</td>
+            <td>9/10</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Movie genres</h2>
+      <ul>
+        <li>
+          Fantasy
+          <ul>
+            <li>Harry Potter</li>
+            <li>Lord of the Rings</li>
+          </ul>
         </li>
 
         <li>
-            <article>
-            <h2>Name movie: Forrest Gump</h2>
-            <img src="../static/images/forrest-gump.png" alt="Forrest Gump movie poster">
-            <p>Movie description: The story of a boy who had serious problems with his legs as a child, but fear is stronger than that and makes him run faster and faster. </p>
-            <a href="https://www.imdb.com/title/tt0109830/">Read more</a>
-            </article>
+          Drama
+          <ul>
+            <li>Forrest Gump</li>
+            <li>The Green Mile</li>
+          </ul>
         </li>
-    </ul>
-    </section>
-    <p>Which movie is your favorite?</p>
-    <form>
-        <label for="favorite-movie">Movie name:</label>
 
-        <input 
-        type="text"
-        id="favorite-movie"
-        name="favorite-movie"
-        placeholder="Enter movie name"
-        >
-    </form>
-        <form>
-            <label for="favorite-movie">Movie name</label>
+        <li>
+          Comedy
+          <ul>
+            <li>Home Alone</li>
+            <li>The Mask</li>
+          </ul>
+        </li>
+      </ul>
 
-            <input
+      <h2>My top movies</h2>
+
+      <ol>
+        <li>Lord of the Rings</li>
+        <li>Harry Potter</li>
+        <li>Forrest Gump</li>
+      </ol>
+
+      <form>
+        <div>
+          <label for="favorite-movie">Movie name:</label>
+          <input
             type="text"
             id="favorite-movie"
             name="favorite_movie"
-            >
+            placeholder="Enter movie name"
+            required
+          />
+        </div>
 
-            <label for="movie-rewiev">Your rewiev</label>
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
 
-            <textarea 
-                id="movie-rewiev"
-                name="movie_rewiev"
-            ></textarea>
+        <div>
+          <label for="movie-review">Yuor review</label>
+          <textarea
+            id="movie-review"
+            name="movie_review"
+            placeholder="Write your review"
+          ></textarea>
+        </div>
 
-            <button type="submit">Submit</button>
-        </form>
+        <button type="submit">Submit</button>
+      </form>
     </main>
     <footer>
-        <p>My training</p>
+      <p>My training</p>
     </footer>
-</body>
+  </body>
 </html>
